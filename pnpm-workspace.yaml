@@ -1,0 +1,4 @@
+autoInstallPeers: false
+shamefullyHoist: false
+fetchRetryMintimeout: 30000
+fetchRetryMaxtimeout: 180000

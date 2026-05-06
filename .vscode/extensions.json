@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "codezombiech.gitignore",
+    "editorconfig.editorconfig",
+    "formulahendry.auto-close-tag",
+    "hverlin.mise-vscode",
+    "mariusalchimavicius.json-to-ts",
+    "mattpocock.ts-error-translator",
+    "mikestead.dotenv",
+    "pmneo.tsimporter",
+    "tyriar.sort-lines",
+    "wmaurer.change-case"
+  ]
+}
