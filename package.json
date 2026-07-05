@@ -2,7 +2,7 @@
   "name": "envirun",
   "version": "0.1.0",
   "bin": {
-    "envrunx": "./dist/cli.mjs"
+    "envirun": "./dist/cli.mjs"
   },
   "files": [
     "dist"
