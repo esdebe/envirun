@@ -1,0 +1,6 @@
+autoInstallPeers: false
+shamefullyHoist: false
+fetchRetryMintimeout: 30000
+fetchRetryMaxtimeout: 180000
+allowBuilds:
+  lefthook: true

@@ -1,0 +1,16 @@
+pre-commit:
+  commands:
+    oxlint:
+      glob: '*.{js,jsx,ts,tsx,mjs,cjs}'
+      stage_fixed: true
+      run: pnpm exec oxlint --fix {staged_files}
+    oxfmt:
+      glob: '*.{js,jsx,ts,tsx,mjs,cjs,json}'
+      stage_fixed: true
+      run: pnpm exec oxfmt --write {staged_files}
+pre-push:
+  commands:
+    typescript:
+      run: pnpm run check
+    knip:
+      run: pnpm knip
