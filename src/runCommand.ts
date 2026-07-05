@@ -10,6 +10,7 @@ export const runCommand = async (
       env: {
         ...process.env,
         ...env,
+        NODE_ENV: mode,
       },
     },
     throwOnError: false,
