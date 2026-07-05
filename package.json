@@ -1,0 +1,53 @@
+{
+  "name": "envirun",
+  "version": "0.0.0",
+  "bin": {
+    "envirun": "dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "check": "tsc -b tsconfig.json --noEmit",
+    "dev": "node -e \"console.log(process.env.API_URL)\"",
+    "format:check": "oxfmt . --check",
+    "format": "oxfmt .",
+    "knip": "knip --no-exit-code",
+    "lint:fix": "oxlint . --fix",
+    "lint": "oxlint .",
+    "postbuild": "pnpm pack --out \"artifacts/%s-%v.tgz\"",
+    "prepare": "test -d .git && lefthook install || echo 'Skipping lefthook: No .git directory'",
+    "release": "bumpp",
+    "reset": "pnpm rimraf dist && pnpx rimraf pnpm-lock.yaml && pnpx rimraf node_modules && pnpm i",
+    "serve": "node -e \"console.log(process.env.API_URL)\"",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@clack/prompts": "1.7.0",
+    "@types/node": "24.13.3",
+    "bumpp": "12.2.0",
+    "fast-glob": "3.3.3",
+    "knip": "6.32.2",
+    "lefthook": "2.1.10",
+    "oxfmt": "0.63.0",
+    "oxlint": "1.78.0",
+    "oxlint-tsgolint": "7.0.2001",
+    "publint": "0.3.23",
+    "rimraf": "6.1.3",
+    "tinyexec": "1.3.0",
+    "tsdown": "0.22.14",
+    "typescript": "7.0.2",
+    "vitest": "4.1.10"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@11.21.0"
+}
