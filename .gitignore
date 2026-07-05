@@ -4,3 +4,4 @@ dist
 !.env/env.json
 .tmp
 artifacts
+*.tsbuildinfo
