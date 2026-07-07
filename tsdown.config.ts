@@ -5,11 +5,9 @@ export default defineConfig({
     '~': './src',
   },
   clean: true,
-  deps: {
-    onlyBundle: false,
-    alwaysBundle: ['@clack/prompts', 'fast-glob', 'tinyexec'],
+  dts: {
+    tsgo: true,
   },
-  dts: true,
   entry: ['src/index.ts', 'src/cli.ts'],
   format: ['esm'],
   minify: {
