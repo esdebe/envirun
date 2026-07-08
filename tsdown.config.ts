@@ -5,6 +5,10 @@ export default defineConfig({
     '~': './src',
   },
   clean: true,
+  deps: {
+    onlyBundle: false,
+    alwaysBundle: ['@clack/prompts', 'fast-glob', 'tinyexec'],
+  },
   dts: {
     tsgo: true,
   },
