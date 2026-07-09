@@ -5,3 +5,5 @@ fetchRetryMaxtimeout: 180000
 allowBuilds:
   lefthook: true
 minimumReleaseAge: 0
+overrides:
+  typescript: 7.0.2
