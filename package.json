@@ -20,10 +20,10 @@
     "dev": "node -e \"console.log(process.env.API_URL)\"",
     "format": "oxfmt .",
     "format:check": "oxfmt . --check",
-    "postinstall": "test -d .git && lefthook install || echo 'Skipping lefthook: No .git directory'",
     "knip": "knip --no-exit-code",
     "lint": "oxlint .",
     "lint:fix": "oxlint . --fix",
+    "prepare": "test -d .git && lefthook install || echo 'Skipping lefthook: No .git directory'",
     "reset": "pnpm rimraf dist && pnpx rimraf pnpm-lock.yaml && pnpx rimraf node_modules && pnpm i",
     "serve": "node -e \"console.log(process.env.API_URL)\"",
     "test": "vitest"
